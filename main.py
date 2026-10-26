@@ -1,1 +1,7 @@
-prompt drill is running code
+from fastapi import FastAPI
+
+app = FastAPI()
+
+@app.get("/")
+def home():
+    return {"message": "PromptDrill is running"}
